@@ -1,28 +1,27 @@
 {
-  "name": "ferrecentro-rodriguez",
-  "private": true,
+  "name": "ferrecentro-rodriguez-web",
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
+  "homepage": "https://isaiespinalf-cmyk.github.io/Ferrecentro-Rodriguez-Web",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "vite": "^6.2.0",
-    "@vitejs/plugin-react": "^5.0.4",
-    "@tailwindcss/vite": "^4.1.14",
-    "lucide-react": "^0.546.0"
+    "lucide-react": "^0.268.0",
+    "motion": "^10.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "~5.8.2",
-    "tsx": "^4.21.0",
-    "tailwindcss": "^4.1.14",
-    "autoprefixer": "^10.4.21",
-    "@types/node": "^22.14.0"
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "gh-pages": "^5.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^6.4.1",
+    "tailwindcss": "^3.3.3"
   }
 }
